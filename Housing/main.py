@@ -9,7 +9,7 @@ melbourne_features = ['Rooms', 'Bathroom', 'Landsize', 'Lattitude', 'Longtitude'
 x = melbourne_data[melbourne_features] #fitting features to df
 #print(x.head())
 from sklearn.tree import DecisionTreeRegressor
-clf = DecisionTreeRegressor(random_state=0)
+clf = DecisionTreeRegressor(random_state=1)
 clf.fit(x, y) #Trains using Decision Tree Regressor
 from sklearn.metrics import mean_absolute_error
 predicted_home_prices = clf.predict(x) #these are the predicted values
